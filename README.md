@@ -87,10 +87,14 @@ Juurikansio on kaikkien kansioiden päätaso, josta pääsee tarvittaessa navigo
 
 Tämä kansio ei tarjonnut paljon tuloksia.
 
+ls-komennon lisäksi ajoin vielä home-kansiossa tree-komennon ja sain seuraavan näkymän:</br>
+![Kuva7 5](https://user-images.githubusercontent.com/122887740/213882982-343e912b-143e-4769-a151-0b1d64e57b4a.png) </br>
+Tree-komennolla sai kansion mattis sisällön, kuten kuvasta näkee, dataa on kertynyt viimeisen oppitunnin jäljiltä. </br>
+
 /home/mattis/ - kansio on jatkoa home-kansiolle ja tämä sisältää käyttäjäprofiilin / asetukset. Navigoin tänne käyttämällä jälleen cd komentoa. </br>
 ![Kuva8](https://user-images.githubusercontent.com/122887740/213863198-f80198c5-158d-4a1b-8b3f-4423b3335f95.png) </br>
 
-Kansiosta löytyi oppitunnin aikana tehty tiedosto testi.md, jonka sisältöä kävin tutkimassa käyttämällä komentoa less testi.md </br>
+Testiksi avasin oppitunnin aikana tehdyn tiedoston testi.md komennolla: less testi.md </br>
 ![Kuva9](https://user-images.githubusercontent.com/122887740/213863205-ea874ee9-f09a-4a27-a7e7-0dd610a175ff.png) </br>
 
 /etc/ - kansio löytyy suoraan root kansion alta.
@@ -99,12 +103,11 @@ Kansiosta löytyi oppitunnin aikana tehty tiedosto testi.md, jonka sisältöä k
 Kansiosta löytyy paljon erilaisia tiedostoja eri tiedostopäätteillä sekä alikansioita. Testasin avata yhden tiedostoista käyttäen less komentoa. </br>
 ![Kuva11](https://user-images.githubusercontent.com/122887740/213863238-bf78cd75-cbd1-4095-b27d-dd35069ce6a6.png) </br>
 
-Kyseinen tiedosto xattr.conf viittaa ainakin tiedostopäätteen perusteella johonkin konfiguraatioon. Tätä muokkaamalla saa asiaa x konfiguroitua.
+Kyseinen tiedosto xattr.conf viittaa ainakin tiedostopäätteen perusteella johonkin konfiguraatioon. Tiedostoa muokkaamalla saa asiaa x konfiguroitua.
 Kansio vaikuttaa olevan koti kaikille ohjelmille ja eri asetuksille.
 
 /media/ - kansio on suoraan root kansion juuressa ja tänne tulee kaikki irroitettavat mediat, kuten USB-muistitikut, muistikortit, CD/DVD-levyt. </br>
 ![Kuva12](https://user-images.githubusercontent.com/122887740/213863250-c4e4cedf-41ca-4feb-ba53-cd032f088bb9.png) </br>
-
 
 /var/log/ - kansio var on juuressa ja log löytyy var kansion alta. Tämä paikka on ilmiselvästi koti erilaisille lokitiedostoille. </br>
 ![Kuva13](https://user-images.githubusercontent.com/122887740/213863264-ec98c676-9ecd-4b67-9b38-81271cefd900.png) </br>
@@ -115,13 +118,12 @@ Avasin lokitiedoston nimeltä dpkg.log käyttäen less-komentoa. </br>
 
 ## GREP-komennon käyttö
 Klo 12.06 </br>
-Tätä tehtävää varten etsin aiheesta Internetin syövereistä SATHIYAMOORTHYn nimisen henkilön kirjoittaman artikkelin, jossa on 15 käytännöllistä Grep komentoa. 
+Tätä tehtävää varten etsin aiheesta Internetin syövereistä SATHIYAMOORTHY nimisen henkilön kirjoittaman artikkelin, jossa on 15 käytännöllistä Grep komentoa. 
 
-Ensimmäisenä kokeilin oppitunnin aikana tehtyyn tiedostoon testi.md ajaa Grep komentoa "grep "tämä" testi.md", eli etsin tämä sanaa tiedostosta ja tuloksena tuli: </br>
+Ensimmäisenä kokeilin oppitunnin aikana tehtyyn tiedostoon testi.md ajaa Grep komentoa: grep "tämä" testi.md. Eli grep-komennolla sanaa tämä pyydetystä tiedostosta testi.md ja tuloksena tuli: </br>
 ![Kuva15](https://user-images.githubusercontent.com/122887740/213863279-3fe74576-1059-43a0-9921-a621ff5c9ad2.png) </br>
 
-
-Tämä komento etsi vain pelkän tämä sanan ja sisällytti löydökseen myös koko lauseen, jossa tämä sana on.
+Komento sisällytti "tämä" sanan lisäksi myös koko lauseen, jossa "tämä" sana on.
 
 Seuraavaksi ajoin /var/log kansiossa Grep komennon "grep -iw "configure" dpkg.log" ja sain seuraavat tulokset: </br>
 ![Kuva16](https://user-images.githubusercontent.com/122887740/213863283-57f8102d-7be6-4b28-b7fa-b51f821603ef.png) </br>
