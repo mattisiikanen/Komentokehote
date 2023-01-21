@@ -47,10 +47,10 @@ Kävin aluksi etsimässä komentoriviohjelmia ja törmäsin artikkeliin Varun Ke
 - Terminology
 - GNOME Terminal
 
-Käytin komentoa "sudo apt-get install terminator terminology gnome-terminal -y" asentaakseni kaikki ohjelmat kerralla. Hommat jäivät tällä erää tähän 18.00, jatkuu huomenna.
+Käytin komentoa "sudo apt-get install terminator terminology gnome-terminal -y" asentaakseni kaikki ohjelmat kerralla. Hommat jäivät tällä erää tähän 18.00 20.1.2023. 
 
-Homma jatkui seuraavana aamuna 11.15.
-Ensimmäisenä kokeilin Terminator ohjelmaa, käynnistin ohjelman ja kirjoitin ensimmäisenä komentona help.
+Homma jatkui seuraavana aamuna 11.15 21.1.2023.
+Ensimmäisenä kokeilin Terminator ohjelmaa, käynnistin ohjelman ja kirjoitin ensimmäisenä komentona help. </br>
 ![Kuva3](https://user-images.githubusercontent.com/122887740/213863089-946de6a4-d140-4796-a8d6-9a867c2736cd.png) </br>
 
 
