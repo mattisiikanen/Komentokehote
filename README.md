@@ -27,7 +27,7 @@ Tämä johtuu siitä, että latasin Micro työkalun jo oppitunnin aikana.
 Klo 17:35 </br>
 Seuraavaksi tiedossa oli raudan läpikäynti virtuaalikoneella. Kokeilin komentoa sudo lshw -short -sanitize, mutta komentokehote palautti seuraavan tiedon: "sudo: lshw: command not found". Tämä johtuu siis siitä, että jouduin ensin asentamaan kyseisen työkalun koneelle käyttämällä komentoa: sudo apt-get install lshw.
 Asennuksen jälkeen koitin uudelleen edellä mainittua komentoa sudo lshw -short -sanitize ja sain seuraavat tulokset: </br>
-<![Kuva2](https://user-images.githubusercontent.com/122887740/213863079-0555d014-e513-426b-ab37-d392de00d9a4.png) /br>
+![Kuva2](https://user-images.githubusercontent.com/122887740/213863079-0555d014-e513-426b-ab37-d392de00d9a4.png) </br>
 
 Listaus pitää sisällään virtuaalikoneeseen syötetyt tiedot, jotka määriteltiin konetta luotaessa, pois lukien prosessoria, joka on sama kuin fyysisessä raudassa.
 - system: toimii järjestelmän luokkana / päätasona.
