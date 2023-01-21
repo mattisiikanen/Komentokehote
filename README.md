@@ -1,5 +1,5 @@
 # Komentokehote
-Tämän tehtävän tarkoituksena oli tehdä opettajan antamia harjoituksia komentokehotteessa
+Tämän tehtävän tarkoituksena oli tehdä opettajan antamia harjoituksia komentokehotteessa.
 
 ## Ympäristö
 
@@ -16,7 +16,7 @@ Virtuaalikoneen speksit:
 - Generation 2 (Hyper-V pyytää määrittelemään)
 
 ## Micron asennus
-Aloitin tehtävän 20.1.2023 klo 17.33 syöttämällä komentoriville seuraavan pätkän: sudo apt-get install micro.
+Aloitin tehtävän 20.1.2023 klo 17.33 syöttämällä komentoriville seuraavan pätkän: sudo apt-get install micro
 Tulos oli seuraavanlainen: </br>
 ![Kuva1](https://user-images.githubusercontent.com/122887740/213863049-2c372e43-66ab-4436-87d7-c7e7f9cae2b0.png) </br>
 
@@ -25,60 +25,59 @@ Tämä johtuu siitä, että latasin Micro työkalun jo oppitunnin aikana.
 
 ## Rauta
 Klo 17:35 </br>
-Seuraavaksi tiedossa oli raudan läpikäynti virtuaalikoneella. Kokeilin komentoa sudo lshw -short -sanitize, mutta komentokehote palautti seuraavan tiedon: "sudo: lshw: command not found". Tämä johtuu siis siitä, että jouduin ensin asentamaan kyseisen työkalun koneelle käyttämällä komentoa: sudo apt-get install lshw.
+Seuraavaksi tiedossa oli raudan läpikäynti virtuaalikoneella. Kokeilin komentoa sudo lshw -short -sanitize, mutta komentokehote palautti seuraavan tiedon: "sudo: lshw: command not found". Tämä johtui siitä, että koneella ei ollut kyseistä työkalua ja jouduin asentamaan sen koneelle käyttämällä komentoa: sudo apt-get install lshw.
 Asennuksen jälkeen koitin uudelleen edellä mainittua komentoa sudo lshw -short -sanitize ja sain seuraavat tulokset: </br>
 ![Kuva2](https://user-images.githubusercontent.com/122887740/213863079-0555d014-e513-426b-ab37-d392de00d9a4.png) </br>
 
 Listaus pitää sisällään virtuaalikoneeseen syötetyt tiedot, jotka määriteltiin konetta luotaessa, pois lukien prosessoria, joka on sama kuin fyysisessä raudassa.
 - system: toimii järjestelmän luokkana / päätasona.
 - bus: seuraava taso päätasosta.
-- memory: tämä luokka pitää sisällään muistiin liittyvät tiedot, kuten koneelle asetetun määrän.
+- memory: tämä luokka pitää sisällään muistiin liittyvät tiedot, kuten virtuaalikoneelle konfiguroidun määrän.
 - processor: prosessori, jota kone käyttää, tässä tapauksessa se on sama kuin mitä isäntä koneessa on käytössä.
-- system: näyttää siihen koneeseen kiinnitetyt PnP (plug&play) laitteet.
-- storage: tämä luokka toimii pääkategoriana sekä virtuaaliselle kiintolevylle, partitioille ja liikutettaville medioille.
+- system: näyttää koneeseen liitetyt PnP (plug&play) laitteet.
+- storage: tämä luokka toimii pääkategoriana sekä virtuaaliselle kiintolevylle, partitioille että liikutettaville medioille.
 - disk: joko virtuaalinen levyasema, cd/dvd-asema tai muistitikku/kortti
 - network: kytketty verkkokortti
 
 
 ## Kolme uutta komentoriviohjelmaa apt komennolla
 Klo 17:51 </br>
-Kävin aluksi etsimässä komentoriviohjelmia ja törmäsin artikkeliin Varun Kesarin kirjoittamaan artikkeliin otsikolla "Best Terminal Apps for Enhanced Linux Productivity", päädyin käyttämään sitä lähteenä kolmen eri komentoriviohjelman testaukseen. Valitsin seuraavat:
+Kävin aluksi etsimässä komentoriviohjelmia ja törmäsin artikkeliin Varun Kesarin kirjoittamaan artikkeliin otsikolla "Best Terminal Apps for Enhanced Linux Productivity", päädyin käyttämään sitä lähteenä kolmen eri komentoriviohjelman testaukseen. Valitsin seuraavat: </br>
 - Terminator
 - Terminology
 - GNOME Terminal
 
-Käytin komentoa "sudo apt-get install terminator terminology gnome-terminal -y" asentaakseni kaikki ohjelmat kerralla. Hommat jäivät tällä erää tähän 18.00 20.1.2023. 
+Käytin komentoa "sudo apt-get install terminator terminology gnome-terminal -y" asentaakseni kaikki ohjelmat kerralla. Hommat jäivät tällä erää tähän 18.00 20.1.2023. </br> </br>
 
-Homma jatkui seuraavana aamuna 11.15 21.1.2023.
+Homma jatkui seuraavana aamuna klo 11.15 21.1.2023.
 Ensimmäisenä kokeilin Terminator ohjelmaa, käynnistin ohjelman ja kirjoitin ensimmäisenä komentona help. </br>
 ![Kuva3](https://user-images.githubusercontent.com/122887740/213863089-946de6a4-d140-4796-a8d6-9a867c2736cd.png) </br>
 
 
-Ohjeiden perusteella terminator toimii komentoriviemulaattorina. Tutkiessani tätä enemmän paljastui Wikipedian artikkelista lisätietoa ja vaikuttaa siltä, että ohjelma on ohjelmoitu käyttäen Javakieltä. Ulkoasu ohjelmalla on hyvin yksinkertainen ja samannäköinen kuin Debianin sisäänrakennetulla komentokehotteella.
+Ohjeiden perusteella Terminator toimii komentoriviemulaattorina. Tutkiessani tätä enemmän, paljastui Wikipedian artikkelista lisätietoa ja vaikuttaa siltä, että ohjelma on ohjelmoitu käyttäen Java-kieltä. Ulkoasu ohjelmalla on hyvin yksinkertainen ja samannäköinen kuin Debianin sisäänrakennetulla komentokehotteella. </br>
 
-Toinen ohjelma oli nimeltään Terminology, tein samat testit tässä ja ajoin aivan aluksi komennon help. </br>
+Toinen ohjelma oli nimeltään Terminology, tein ohjelmalle samat testit kuin aiemmin ja ajoin aivan aluksi komennon help. </br>
 ![Kuva4](https://user-images.githubusercontent.com/122887740/213863099-28c7ef10-51bc-4b98-9246-418d0e9150ea.png) </br>
 
 
-Tämä ohjelma osoittautuikin hiukan monipuolisemmaksi, sillä kyseisellä ohjelmalla pystyy tekstin lisäksi käsittelemään myös ääntä, kuvaa ja animoituja gifejä.
-Ulkoasukin on myös monipuolisempi ohjelman salliessa eri värejä. Mielenkiintoinen ohjelmisto kokonaisuudessaan.
+Terminology osoittautuikin hiukan monipuolisemmaksi, kuin luulin, sillä kyseisellä ohjelmalla pystyy tekstin lisäksi käsittelemään myös ääntä, kuvaa ja animoituja gifejä. Ulkoasukin on myös monipuolisempi ohjelman salliessa eri värejä. Mielenkiintoinen ohjelmisto kokonaisuudessaan.
 
 Viimeisenä oli kokeilussa GNOME Terminal ja se osoittautuikin hyvin perinteisen oloiseksi komentokehotteeksi. </br>
 ![Kuva5](https://user-images.githubusercontent.com/122887740/213863108-d069852d-6365-4ea3-82ea-f37c349b55ad.png) </br>
 
 
-Wikipedian mukaan kyseessä on GNOME Terminal on kehitetty GNOME työpöydän rinnalle ja se tarjoaa samat perusmahdollisuudet kuin esimerkiksi Debianin komentokehote.
+Wikipedian mukaan GNOME Terminal on kehitetty GNOME työpöydän rinnalle ja se tarjoaa samat perusmahdollisuudet kuin esimerkiksi Debianin komentokehote.
 
 
 
 ## Kansioiden esittely (Important Directories)
 Klo 11.45 </br>
-Aloitin tämän tehtävän menemällä ensin root kansioon käyttämällä cd .. komentoa niin kauan kunnes kehotteessa luki /$
+Aloitin tehtävän menemällä ensin juurikansioon käyttämällä komentoa: cd /
 
 / (root) - kansiossa käytin komentoja pwd ja ls, sain seuraavat tulokset: </br>
 ![Kuva6](https://user-images.githubusercontent.com/122887740/213863118-fa60e93f-5943-49de-8389-2483429e2198.png) </br>
 
-Root kansio on kaikkien alikansioiden päätaso, josta pääsee tarvittaessa navigoimaan koneen kaikkiin tiedostoihin. Sen alta löytyy myös tulevien kansiorakenteiden kansiot.
+Juurikansio on kaikkien kansioiden päätaso, josta pääsee tarvittaessa navigoimaan koneen kaikkiin tiedostoihin. Sen alta löytyy myös seuraavaksi käsiteltävien kansioiden kansiorakenteet.
 
 /home/ - navigoin kyseiseen kansioon root kansiosta kirjoittamalla cd home. Kansiossa ajoin jälleen komennot pwd ja ls. </br>
 ![Kuva7](https://user-images.githubusercontent.com/122887740/213863126-c236c647-e6fa-4a24-a18b-7b4ef882ed34.png) </br>
@@ -94,7 +93,7 @@ Kansiosta löytyi oppitunnin aikana tehty tiedosto testi.md, jonka sisältöä k
 /etc/ - kansio löytyy suoraan root kansion alta.
 ![Kuva10](https://user-images.githubusercontent.com/122887740/213863221-cd10be23-4180-4a4b-8747-dacb6f4a9dbc.png) </br>
 
-Kansiosta löytyy paljon erilaisia tiedostoja eri tiedostopäätteillä sekä kansioita. Testasin avata yhden tiedostoista käyttäen less komentoa. </br>
+Kansiosta löytyy paljon erilaisia tiedostoja eri tiedostopäätteillä sekä alikansioita. Testasin avata yhden tiedostoista käyttäen less komentoa. </br>
 ![Kuva11](https://user-images.githubusercontent.com/122887740/213863238-bf78cd75-cbd1-4095-b27d-dd35069ce6a6.png) </br>
 
 Kyseinen tiedosto xattr.conf viittaa ainakin tiedostopäätteen perusteella johonkin konfiguraatioon. Tätä muokkaamalla saa asiaa x konfiguroitua.
