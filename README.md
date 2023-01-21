@@ -21,6 +21,9 @@ Tulos oli seuraavanlainen: </br>
 ![Kuva1](https://user-images.githubusercontent.com/122887740/213863049-2c372e43-66ab-4436-87d7-c7e7f9cae2b0.png) </br>
 
 Tämä johtuu siitä, että latasin Micro työkalun jo oppitunnin aikana.
+Päätin myös testata micro-työkalun käyttöä:</br>
+![Kuva1 5](https://user-images.githubusercontent.com/122887740/213882865-2c48da5e-93a6-495a-92f4-8495531eff7d.png)</br>
+
 
 
 ## Rauta
