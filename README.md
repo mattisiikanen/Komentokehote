@@ -18,7 +18,6 @@ Virtuaalikoneen speksit:
 ## Micron asennus
 Aloitin tehtävän 20.1.2023 klo 17.33 syöttämällä komentoriville seuraavan pätkän: sudo apt-get install micro.
 Tulos oli seuraavanlainen 
-![Add file: Upload](Kuva 1.png) </br>
 ![Kuva1](https://user-images.githubusercontent.com/122887740/213863049-2c372e43-66ab-4436-87d7-c7e7f9cae2b0.png)
 
 Tämä johtuu siitä, että latasin Micro työkalun jo oppitunnin aikana.
