@@ -126,7 +126,7 @@ Viimeisenä testinä käytin komentoa "grep -A 3 - i "configure" dpkg.log", kyse
 Grep vaikuttaa hyvältä työkalulta, mikäli haluaa tutkia isoja tiedostoja ja kaivaa haluttu data sieltä ulos.
 
 ## Lopetus
-Kyseinen kotitehtävä avasi paljon komentokehotteen maailmaa Linuxissa. Sen avulla voi selvästi tehdä kaikki toimenpiteet, toki harjoitukset olivat vain pintaraapaisu, mutta kyllä niistä oli itselle ainakin hyötyä.
+Kyseinen kotitehtävä avasi paljon komentokehotteen maailmaa Linuxissa. Sen avulla voi selvästi tehdä kaikki toimenpiteet, toki harjoitukset olivat vain pintaraapaisu, mutta kyllä niistä oli itselle ainakin hyötyä. Tehtäviin meni kokonaisuudessaan noin 1,5h.
 
 ## Lähteet:
 
