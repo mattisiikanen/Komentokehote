@@ -17,7 +17,7 @@ Virtuaalikoneen speksit:
 
 ## Micron asennus
 Aloitin tehtävän 20.1.2023 klo 17.33 syöttämällä komentoriville seuraavan pätkän: sudo apt-get install micro.
-Tulos oli seuraavanlainen 
+Tulos oli seuraavanlainen:
 ![Kuva1](https://user-images.githubusercontent.com/122887740/213863049-2c372e43-66ab-4436-87d7-c7e7f9cae2b0.png)
 
 Tämä johtuu siitä, että latasin Micro työkalun jo oppitunnin aikana.
@@ -26,7 +26,8 @@ Tämä johtuu siitä, että latasin Micro työkalun jo oppitunnin aikana.
 ## Rauta
 17:35
 Seuraavaksi tiedossa oli raudan läpikäynti virtuaalikoneella. Kokeilin komentoa sudo lshw -short -sanitize, mutta komentokehote palautti seuraavan tiedon: "sudo: lshw: command not found". Tämä johtuu siis siitä, että jouduin ensin asentamaan kyseisen työkalun koneelle käyttämällä komentoa: sudo apt-get install lshw.
-Asennuksen jälkeen koitin uudelleen edellä mainittua komentoa sudo lshw -short -sanitize ja sain seuraavat tulokset: ![Add file: Upload](Kuva 2.png) </br>
+Asennuksen jälkeen koitin uudelleen edellä mainittua komentoa sudo lshw -short -sanitize ja sain seuraavat tulokset: </br>
+<![Kuva2](https://user-images.githubusercontent.com/122887740/213863079-0555d014-e513-426b-ab37-d392de00d9a4.png) /br>
 
 Listaus pitää sisällään virtuaalikoneeseen syötetyt tiedot, jotka määriteltiin konetta luotaessa, pois lukien prosessoria, joka on sama kuin fyysisessä raudassa.
 - system: toimii järjestelmän luokkana / päätasona.
@@ -50,18 +51,21 @@ Käytin komentoa "sudo apt-get install terminator terminology gnome-terminal -y"
 
 Homma jatkui seuraavana aamuna 11.15.
 Ensimmäisenä kokeilin Terminator ohjelmaa, käynnistin ohjelman ja kirjoitin ensimmäisenä komentona help.
-![Add file: Upload](Kuva 3.png) </br>
+![Kuva3](https://user-images.githubusercontent.com/122887740/213863089-946de6a4-d140-4796-a8d6-9a867c2736cd.png) </br>
+
 
 Ohjeiden perusteella terminator toimii komentoriviemulaattorina. Tutkiessani tätä enemmän paljastui Wikipedian artikkelista lisätietoa ja vaikuttaa siltä, että ohjelma on ohjelmoitu käyttäen Javakieltä. Ulkoasu ohjelmalla on hyvin yksinkertainen ja samannäköinen kuin Debianin sisäänrakennetulla komentokehotteella.
 
 Toinen ohjelma oli nimeltään Terminology, tein samat testit tässä ja ajoin aivan aluksi komennon help.
-![Add file: Upload](Kuva 4.png) </br>
+![Kuva4](https://user-images.githubusercontent.com/122887740/213863099-28c7ef10-51bc-4b98-9246-418d0e9150ea.png) </br>
+
 
 Tämä ohjelma osoittautuikin hiukan monipuolisemmaksi, sillä kyseisellä ohjelmalla pystyy tekstin lisäksi käsittelemään myös ääntä, kuvaa ja animoituja gifejä.
 Ulkoasukin on myös monipuolisempi ohjelman salliessa eri värejä. Mielenkiintoinen ohjelmisto kokonaisuudessaan.
 
 Viimeisenä oli kokeilussa GNOME Terminal ja se osoittautuikin hyvin perinteisen oloiseksi komentokehotteeksi.
-![Add file: Upload](Kuva 5.png) </br>
+![Kuva5](https://user-images.githubusercontent.com/122887740/213863108-d069852d-6365-4ea3-82ea-f37c349b55ad.png) </br>
+
 
 Wikipedian mukaan kyseessä on GNOME Terminal on kehitetty GNOME työpöydän rinnalle ja se tarjoaa samat perusmahdollisuudet kuin esimerkiksi Debianin komentokehote.
 
@@ -72,39 +76,39 @@ Wikipedian mukaan kyseessä on GNOME Terminal on kehitetty GNOME työpöydän ri
 Aloitin tämän tehtävän menemällä ensin root kansioon käyttämällä cd .. komentoa niin kauan kunnes kehotteessa luki /$
 
 / (root) - kansiossa käytin komentoja pwd ja ls, sain seuraavat tulokset:
-![Add file: Upload](Kuva 6.png) </br>
+![Kuva6](https://user-images.githubusercontent.com/122887740/213863118-fa60e93f-5943-49de-8389-2483429e2198.png) </br>
 
 Root kansio on kaikkien alikansioiden päätaso, josta pääsee tarvittaessa navigoimaan koneen kaikkiin tiedostoihin. Sen alta löytyy myös tulevien kansiorakenteiden kansiot.
 
 /home/ - navigoin kyseiseen kansioon root kansiosta kirjoittamalla cd home. Kansiossa ajoin jälleen komennot pwd ja ls.
-![Add file: Upload](Kuva 7.png) </br>
+![Kuva7](https://user-images.githubusercontent.com/122887740/213863126-c236c647-e6fa-4a24-a18b-7b4ef882ed34.png) </br>
 
 Tämä kansio ei tarjonnut paljon tuloksia.
 
 /home/mattis/ - kansio on jatkoa home-kansiolle ja tämä sisältää käyttäjäprofiilin / asetukset. Navigoin tänne käyttämällä jälleen cd komentoa.
-![Add file: Upload](Kuva 8.png) </br>
+![Kuva8](https://user-images.githubusercontent.com/122887740/213863198-f80198c5-158d-4a1b-8b3f-4423b3335f95.png) </br>
 
 Kansiosta löytyi oppitunnin aikana tehty tiedosto testi.md, jonka sisältöä kävin tutkimassa käyttämällä komentoa less testi.md
-![Add file: Upload](Kuva 9.png) </br>
+![Kuva9](https://user-images.githubusercontent.com/122887740/213863205-ea874ee9-f09a-4a27-a7e7-0dd610a175ff.png) </br>
 
-/etc/ - kansio löytyy suoraan root kansion alta. ![Add file: Upload](Kuva 10.png) </br>
+/etc/ - kansio löytyy suoraan root kansion alta.
+![Kuva10](https://user-images.githubusercontent.com/122887740/213863221-cd10be23-4180-4a4b-8747-dacb6f4a9dbc.png) </br>
 
 Kansiosta löytyy paljon erilaisia tiedostoja eri tiedostopäätteillä sekä kansioita. Testasin avata yhden tiedostoista käyttäen less komentoa.
-![Add file: Upload](Kuva 11.png) </br>
+![Kuva11](https://user-images.githubusercontent.com/122887740/213863238-bf78cd75-cbd1-4095-b27d-dd35069ce6a6.png) </br>
 
 Kyseinen tiedosto xattr.conf viittaa ainakin tiedostopäätteen perusteella johonkin konfiguraatioon. Tätä muokkaamalla saa asiaa x konfiguroitua.
 Kansio vaikuttaa olevan koti kaikille ohjelmille ja eri asetuksille.
 
 /media/ - kansio on suoraan root kansion juuressa ja tänne tulee kaikki irroitettavat mediat, kuten USB-muistitikut, muistikortit, CD/DVD-levyt.
-![Add file: Upload](Kuva 12.png) </br>
+![Kuva12](https://user-images.githubusercontent.com/122887740/213863250-c4e4cedf-41ca-4feb-ba53-cd032f088bb9.png) </br>
+
 
 /var/log/ - kansio var on juuressa ja log löytyy var kansion alta. Tämä paikka on ilmiselvästi koti erilaisille lokitiedostoille
-![Add file: Upload](Kuva 13.png) </br>
+![Kuva13](https://user-images.githubusercontent.com/122887740/213863264-ec98c676-9ecd-4b67-9b38-81271cefd900.png) </br>
 
 Avasin lokitiedoston nimeltä dpkg.log käyttäen less-komentoa.
-
-![Add file: Upload](Kuva 14.png) </br>
-
+![Kuva14](https://user-images.githubusercontent.com/122887740/213863271-bfaeb0cf-2aa1-40af-93e2-61e947405cda.png) </br>
 
 
 ## GREP-komennon käyttö
@@ -112,17 +116,20 @@ Avasin lokitiedoston nimeltä dpkg.log käyttäen less-komentoa.
 Tätä tehtävää varten etsin aiheesta Internetin syövereistä SATHIYAMOORTHYn nimisen henkilön kirjoittaman artikkelin, jossa on 15 käytännöllistä Grep komentoa. 
 
 Ensimmäisenä kokeilin oppitunnin aikana tehtyyn tiedostoon testi.md ajaa Grep komentoa "grep "tämä" testi.md", eli etsin tämä sanaa tiedostosta ja tuloksena tuli:
-![Add file: Upload](Kuva 15.png) </br>
+![Kuva15](https://user-images.githubusercontent.com/122887740/213863279-3fe74576-1059-43a0-9921-a621ff5c9ad2.png) </br>
+
 
 Tämä komento etsi vain pelkän tämä sanan ja sisällytti löydökseen myös koko lauseen, jossa tämä sana on.
 
 Seuraavaksi ajoin /var/log kansiossa Grep komennon "grep -iw "configure" dpkg.log" ja sain seuraavat tulokset:
-![Add file: Upload](Kuva 16.png) </br>
+![Kuva16](https://user-images.githubusercontent.com/122887740/213863283-57f8102d-7be6-4b28-b7fa-b51f821603ef.png) </br>
+
 
 grep -iw komento rajoittaa haun pelkästään syötettyyn sanaan ja näyttää vain tarkasti osuneet rivit käyttäjälle kyseisestä tiedostosta.
 
 Viimeisenä testinä käytin komentoa "grep -A 3 - i "configure" dpkg.log", kyseinen komento tulostaa osumat ja kolme riviä ekstraa:
-![Add file: Upload](Kuva 17.png) </br>
+![Kuva17](https://user-images.githubusercontent.com/122887740/213863285-f437cd02-cfbc-4124-9208-401d8c8bb899.png) </br>
+
 
 Grep vaikuttaa hyvältä työkalulta, mikäli haluaa tutkia isoja tiedostoja ja kaivaa haluttu data sieltä ulos.
 
